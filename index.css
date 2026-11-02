@@ -314,15 +314,10 @@
 }
 
 .die {
-  position: relative;
+  display: block;
   width: 100px;
   aspect-ratio: 1;
-  border: 2px solid #5e4631;
-  border-radius: 13px;
-  background:
-    repeating-linear-gradient(0deg, rgba(112, 79, 48, 0.035) 0 1px, transparent 1px 4px),
-    #fff8e9;
-  box-shadow: 0 11px 0 #5f6957, 0 20px 30px rgba(48, 37, 26, 0.26);
+  filter: drop-shadow(0 11px 0 #5f6957) drop-shadow(0 20px 18px rgba(48, 37, 26, 0.26));
 }
 
 .die--rolling {
@@ -335,23 +330,6 @@
   100% { transform: rotate(0) scale(1); }
 }
 
-.pip {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #9f4133;
-  box-shadow: inset 0 1px 1px rgba(75, 27, 21, 0.55);
-  transform: translate(-50%, -50%);
-}
-
-.pip--top-left { left: 28%; top: 28%; }
-.pip--top-right { left: 72%; top: 28%; }
-.pip--middle-left { left: 28%; top: 50%; }
-.pip--middle-right { left: 72%; top: 50%; }
-.pip--center { left: 50%; top: 50%; }
-.pip--bottom-left { left: 28%; top: 72%; }
-.pip--bottom-right { left: 72%; top: 72%; }
 
 .roll-result {
   min-height: 18px;
@@ -505,8 +483,7 @@ footer {
     border: 0;
     border-top: 2px solid #735a41;
   }
-  .die { width: 82px; border-radius: 11px; box-shadow: 0 9px 0 #5f6957, 0 16px 25px rgba(48, 37, 26, 0.22); }
-  .pip { width: 11px; height: 11px; }
+  .die { width: 82px; filter: drop-shadow(0 9px 0 #5f6957) drop-shadow(0 16px 14px rgba(48, 37, 26, 0.22)); }
   .actions { max-width: 100%; grid-template-columns: 1fr 1fr; }
   .rules { grid-template-columns: 1fr; gap: 10px; }
   .rules p { display: grid; grid-template-columns: 25px 1fr; }
