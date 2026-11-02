@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- figma:head-start -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A farmhouse-inspired two-player Pig dice game interface."
+    />
+    <title>Pig — The Dice Game</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- figma:head-end -->
+  </head>
+  <body>
+    <!-- figma:body-start -->
+    <main class="game-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Pig game home">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span>
+            <strong>Pig</strong>
+            <small>The dice game</small>
+          </span>
+        </a>
+
+        <div class="goal">
+          <span>First to</span>
+          <strong>100</strong>
+          <span>wins</span>
+        </div>
+
+        <button class="new-game" id="new-game-button" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11a8 8 0 1 0-2.34 5.66M20 4v7h-7"></path>
+          </svg>
+          New game
+        </button>
+      </header>
+
+      <div class="game-area">
+        <div class="intro">
+          <p class="kicker">Two players. One lucky roll.</p>
+          <h1>Roll brave.<br />Bank smart.</h1>
+          <p>Build your round score, but roll a one and you lose it all.</p>
+        </div>
+
+        <div class="board">
+          <!-- Add or remove player-card--active with JavaScript to change turns. -->
+          <section
+            class="player-card player-card--active"
+            id="player-1"
+            aria-current="true"
+          >
+            <div class="player-heading">
+              <span class="player-number">01</span>
+              <div>
+                <p class="eyebrow" id="player-1-status">Your turn</p>
+                <h2>Player 1</h2>
+              </div>
+              <span class="turn-dot" aria-hidden="true"></span>
+            </div>
+
+            <div class="score-block">
+              <span class="score-label">Total score</span>
+              <strong id="player-1-total">0</strong>
+              <span class="score-goal">/ 100</span>
+            </div>
+
+            <div class="turn-score">
+              <span>Current round</span>
+              <strong id="player-1-current">+0</strong>
+            </div>
+          </section>
+
+          <section class="play-zone" aria-live="polite">
+            <p class="status" id="game-status">Player 1, roll the die</p>
+
+            <!-- This static example shows a five. Toggle the pip elements for other faces. -->
+            <div class="die" id="die" role="img" aria-label="Die showing five">
+              <span class="pip pip--top-left"></span>
+              <span class="pip pip--top-right"></span>
+              <span class="pip pip--center"></span>
+              <span class="pip pip--bottom-left"></span>
+              <span class="pip pip--bottom-right"></span>
+            </div>
+
+            <p class="roll-result" id="roll-result">Ready?</p>
+
+            <div class="actions">
+              <button class="roll-button" id="roll-button" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                  <circle cx="8" cy="8" r="1"></circle>
+                  <circle cx="16" cy="16" r="1"></circle>
+                  <circle cx="12" cy="12" r="1"></circle>
+                </svg>
+                Roll dice
+              </button>
+              <button class="hold-button" id="hold-button" type="button">
+                Hold score
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </button>
+            </div>
+          </section>
+
+          <section class="player-card" id="player-2">
+            <div class="player-heading">
+              <span class="player-number">02</span>
+              <div>
+                <p class="eyebrow" id="player-2-status">Waiting</p>
+                <h2>Player 2</h2>
+              </div>
+              <span class="turn-dot" aria-hidden="true"></span>
+            </div>
+
+            <div class="score-block">
+              <span class="score-label">Total score</span>
+              <strong id="player-2-total">0</strong>
+              <span class="score-goal">/ 100</span>
+            </div>
+
+            <div class="turn-score">
+              <span>Current round</span>
+              <strong id="player-2-current">+0</strong>
+            </div>
+          </section>
+        </div>
+
+        <aside class="rules">
+          <span class="rules-title">How to play</span>
+          <p><strong>01</strong> Roll to add points to your current round.</p>
+          <p><strong>02</strong> Hold to save your points and end your turn.</p>
+          <p><strong>03</strong> Roll a one and your round points disappear.</p>
+        </aside>
+      </div>
+
+      <footer>
+        <span>Classic Pig</span>
+        <span class="footer-line"></span>
+        <span>Pass the device between turns</span>
+      </footer>
+    </main>
+    <!-- figma:body-end -->
+  </body>
+</html>
