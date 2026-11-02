@@ -50,13 +50,13 @@
           <!-- Add or remove player-card--active with JavaScript to change turns. -->
           <section
             class="player-card player-card--active"
-            id="player-1"
+            id="player-0"
             aria-current="true"
           >
             <div class="player-heading">
               <span class="player-number">01</span>
               <div>
-                <p class="eyebrow" id="player-1-status">Your turn</p>
+                <p class="eyebrow" id="player-0-status">Your turn</p>
                 <h2>Player 1</h2>
               </div>
               <span class="turn-dot" aria-hidden="true"></span>
@@ -64,13 +64,13 @@
 
             <div class="score-block">
               <span class="score-label">Total score</span>
-              <strong id="player-1-total">0</strong>
+              <strong id="player-0-total">0</strong>
               <span class="score-goal">/ 100</span>
             </div>
 
             <div class="turn-score">
               <span>Current round</span>
-              <strong id="player-1-current">+0</strong>
+              <strong id="player-0-current">0</strong>
             </div>
           </section>
 
@@ -105,11 +105,11 @@
             </div>
           </section>
 
-          <section class="player-card" id="player-2">
+          <section class="player-card" id="player-1">
             <div class="player-heading">
               <span class="player-number">02</span>
               <div>
-                <p class="eyebrow" id="player-2-status">Waiting</p>
+                <p class="eyebrow" id="player-1-status">Waiting</p>
                 <h2>Player 2</h2>
               </div>
               <span class="turn-dot" aria-hidden="true"></span>
@@ -117,13 +117,13 @@
 
             <div class="score-block">
               <span class="score-label">Total score</span>
-              <strong id="player-2-total">0</strong>
+              <strong id="player-1-total">0</strong>
               <span class="score-goal">/ 100</span>
             </div>
 
             <div class="turn-score">
               <span>Current round</span>
-              <strong id="player-2-current">+0</strong>
+              <strong id="player-1-current">0</strong>
             </div>
           </section>
         </div>
@@ -144,7 +144,7 @@
       </footer>
     </main>
     <!-- figma:body-end -->
-    <script src="selectors.js"></script>
-    <script src="script.js"></script>
+    <script src="selectors-library.js"></script>
+    <script src="game.js"></script>
   </body>
 </html>
