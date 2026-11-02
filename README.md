@@ -5,7 +5,7 @@ Build your round score, but roll a one and you lose it all.
 
 ## Design
 
-Figma prototype: [Two-Player Pig Dice Game](https://www.figma.com/make/pVUVsITqyxeSwfD5EKuOcv/Two-Player-Pig-Dice-Game?p=f&t=kFbGtufvhMV9yTrQ-0)
+Figma prototype: [Two-Player Pig Dice Game](https://www.figma.com/make/pVUVsITqyxeSwfD5EKuOcv/Two-Player-Pig-Dice-Game?fullscreen=1&t=25RpUohAsGgfqbvj-1&code-node-id=0-6)
 
 ## How to play
 
