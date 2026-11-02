@@ -11,8 +11,8 @@ const die = document.querySelector('#die');
 const rollResult = document.querySelector('#roll-result');
 
 // Player cards (toggle player-card--active / player-card--winner)
-const player1Card = document.querySelector('#player-1');
-const player2Card = document.querySelector('#player-2');
+const player1 = document.querySelector('#player-1');
+const player2 = document.querySelector('#player-2');
 
 // Player status labels
 const player1Status = document.querySelector('#player-1-status');
