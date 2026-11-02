@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <title>Pig</title>
+  <polygon points="18,40 22,10 48,24" fill="#e8909a" stroke="#5e4631" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="82,40 78,10 52,24" fill="#e8909a" stroke="#5e4631" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="50" cy="55" r="38" fill="#f4b3ba" stroke="#5e4631" stroke-width="3"/>
+  <ellipse cx="50" cy="66" rx="17" ry="13" fill="#e8909a" stroke="#5e4631" stroke-width="3"/>
+  <circle cx="44" cy="66" r="2.5" fill="#5e4631"/>
+  <circle cx="56" cy="66" r="2.5" fill="#5e4631"/>
+  <circle cx="35" cy="46" r="4" fill="#5e4631"/>
+  <circle cx="65" cy="46" r="4" fill="#5e4631"/>
+</svg>
