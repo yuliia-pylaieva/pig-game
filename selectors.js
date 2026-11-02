@@ -25,3 +25,51 @@ const player2Total = document.querySelector('#player-2-total');
 // Current round scores
 const player1Current = document.querySelector('#player-1-current');
 const player2Current = document.querySelector('#player-2-current');
+
+// ---------------------------------------------------------------
+// Class selectors and other elements
+// ---------------------------------------------------------------
+
+// Layout
+const gameShell = document.querySelector('.game-shell');
+const topbar = document.querySelector('.topbar');
+const gameArea = document.querySelector('.game-area');
+const board = document.querySelector('.board');
+const footer = document.querySelector('footer');
+const footerLine = document.querySelector('.footer-line');
+
+// Topbar
+const brand = document.querySelector('.brand');
+const brandMark = document.querySelector('.brand-mark');
+const goal = document.querySelector('.goal');
+const goalScore = document.querySelector('.goal strong'); // 100
+
+// Intro
+const intro = document.querySelector('.intro');
+const kicker = document.querySelector('.kicker');
+const heading = document.querySelector('h1');
+
+// Rules
+const rules = document.querySelector('.rules');
+const rulesTitle = document.querySelector('.rules-title');
+
+// Play zone
+const playZone = document.querySelector('.play-zone');
+const actions = document.querySelector('.actions');
+
+// Repeated per player (NodeLists: index 0 = player 1, index 1 = player 2)
+const playerCards = document.querySelectorAll('.player-card');
+const playerHeadings = document.querySelectorAll('.player-heading');
+const playerNumbers = document.querySelectorAll('.player-number');
+const playerNames = document.querySelectorAll('.player-card h2');
+const eyebrows = document.querySelectorAll('.eyebrow');
+const turnDots = document.querySelectorAll('.turn-dot');
+const scoreBlocks = document.querySelectorAll('.score-block');
+const scoreLabels = document.querySelectorAll('.score-label');
+const scoreGoals = document.querySelectorAll('.score-goal');
+const turnScores = document.querySelectorAll('.turn-score');
+
+// State class names (toggle with classList)
+const ACTIVE_CLASS = 'player-card--active';
+const WINNER_CLASS = 'player-card--winner';
+const ROLLING_CLASS = 'die--rolling';
