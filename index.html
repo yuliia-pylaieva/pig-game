@@ -9,7 +9,7 @@
       content="A farmhouse-inspired two-player Pig dice game interface."
     />
     <title>Pig — The Dice Game</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
     <!-- figma:head-end -->
   </head>
   <body>
@@ -76,7 +76,12 @@
           <section class="play-zone" aria-live="polite">
             <p class="status" id="game-status">Player 1, roll the die</p>
 
-            <img class="die" id="die" src="images/dice-5.svg" alt="Die showing five" />
+            <img
+              class="die"
+              id="die"
+              src="images/dice-5.svg"
+              alt="Die showing five"
+            />
 
             <p class="roll-result" id="roll-result">Ready?</p>
 
@@ -137,5 +142,7 @@
       </footer>
     </main>
     <!-- figma:body-end -->
+    <script src="selectors.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
